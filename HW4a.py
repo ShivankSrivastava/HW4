@@ -13,7 +13,6 @@ def connect(user):
     repo_url = "https://api.github.com/users/%s/repos"  # % (userid)
     commit_url = "https://api.github.com/repos/%s/%s/commits"  # % (id, repo)
 
-    # Get User
     repo_page = requests.get(repo_url % user)
     if repo_page.status_code == 200:
         repo_data = repo_page.json()
