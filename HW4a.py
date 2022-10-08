@@ -26,12 +26,10 @@ def connect(user):
                 print("No Connection")
                 code200 = False
     else:
-        print("No Connection: Line 18")
+        print("No Connection")
         code200 = False
 
     return code200
-
-# Run Program
 
 
 def run():
