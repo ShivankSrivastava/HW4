@@ -10,8 +10,8 @@ import json
 
 def connect(user):
     code200 = True
-    repo_url = "https://api.github.com/users/%s/repos"  # % (userid)
-    commit_url = "https://api.github.com/repos/%s/%s/commits"  # % (id, repo)
+    repo_url = "https://api.github.com/users/%s/repos"  
+    commit_url = "https://api.github.com/repos/%s/%s/commits" 
 
     repo_page = requests.get(repo_url % user)
     if repo_page.status_code == 200:
